@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  font-weight: 600;
+  box-sizing: border-box;
+  outline: none; border: none;
+  transition: all .2s linear;
+}
+
+.background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-height: 100vh;
+  background: transparent linear-gradient(121deg, #0F91A9 0%, #83CB67 100%);
+  opacity: 1;
+  padding-bottom: 70px;
+}
+.form{
+  padding: 20px;
+  width: 325px;;
+  height: 100%;
+  background: #fff;
+  box-shadow: 10px 10px 50px #00000026;
+  border-radius: 17px;
+  opacity: 1;
+  display: grid;
+  grid-template-rows: 50% auto;
+  position: relative;
+}
+.left{
+  margin-top: 1em;
+}
+.shoes h3{
+  color: #262626;
+}
+.leb{
+  width: 350px;
+  height: 350px;
+  margin-left: -2em;
+  margin-top: -4em;
+}
+.small{
+  margin-top: -2em;
+}
+.m{
+  width: 90px;
+  height: 90px;
+}
+.l{
+  width: 90px;
+  height: 90px;
+}
+.h{
+  width: 90px;
+  height: 90px;
+}
+.words{
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+  color: #262626;
+}
+.para{
+  margin-top: 1em;
+  color: #9f9f9f;
+}
+.black{
+  color: #262626;
+}
+.move{
+  margin-top: 3em;
+  color: #9f9f9f;
+}
+.card img{
+  width: 350px;
+  margin-left: 0.45em;
+  margin-top: -2em;
+}
+.bill{
+  background: #f1f9ee;
+  width: 75%;
+  height: 25%;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas: 
+  'subtotal'
+  'estimated'
+  'total';
+  margin-top: -4.5em;
+  margin-left: 0.5em;
+  padding-top: 1em;
+}
+.subtotal{
+  grid-area: subtotal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.5em;
+  border-bottom: 0.5px solid #c7c7c7;
+}
+.estimated{
+  grid-area: estimated;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  border-bottom: 0.5px solid #c7c7c7;
+}
+.total{
+  grid-area: total;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7em;
+  margin-left: 1em;
+}
+.pay{
+  width: 275px;
+  height: 35px;
+  background:  transparent linear-gradient(97deg, #22A82A 0%, #27C631 100%);
+  border-radius: 10px;
+  opacity: 1;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s ease-in;
+  margin-left: 0.3em;
+}
+.pay:hover{
+  transform: scale(1.1);
+}
+.arrow{
+  display: none;
+  list-style: none;
+}
+@media all and (min-width:481px) {
+  .form{
+    width: 400px;;
+  }
+  .left{
+    margin-left: 2.3em;
+  }
+  .right{
+    margin-left: 2.3em;
+  }
+  .small{
+    margin-top: -2em;
+    display: flex;
+    gap: 1em;
+  }
+}
+@media all and (min-width:699px) {
+  .form{
+    width: 600px;;
+  }
+  .left{
+    margin-left: 9em;
+  }
+  .right{
+    margin-left: 9em;
+  }
+  .bill{
+    width: 65%;
+    height: 25%;
+    margin-top: -4em;
+    margin-left: 0.5em;
+    padding-top: 1em;
+  }
+  .pay{
+    width: 255px;
+    height: 35px;
+    margin-left: 1em;
+  }
+}
+@media all and (min-width:768px) {
+ .form{
+    width: 720px;;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'left right';
+  }
+  .left{
+    grid-area: left;
+    margin-left: 2em;
+  }
+  .right{
+    grid-area: right;
+    margin-left: 2em;
+  }
+  .card img{
+    width: 350px;
+    margin-left: 0.45em;
+    margin-top: -5em;
+  }
+  .bill{
+    width: 75%;
+    height: 70%;
+    margin-top: -4em;
+    margin-left: 0.5em;
+    padding-top: 1em;
+  }
+  .pay{
+    width: 250px;
+    height: 35px;
+    margin-top: 4em;
+  } 
+  .arrow{
+    display: flex;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0.1em;
+    left: 45%;
+  }
+  
+}
+@media all and (min-width: 1024px) {
+  .form{
+    width: 950px;
+    height: 800px;
+  }
+  .left{
+    grid-area: left;
+    margin-left: 2em;
+  }
+  .right{
+    grid-area: right;
+    margin-left: 2em;
+  }
+  .card img{
+    width: 450px;
+    margin-left: 0.45em;
+    margin-top: -3em;
+  }
+  .bill{
+    width: 75%;
+    height: 45%;
+    margin-top: -2em;
+    margin-left: 0.5em;
+    padding-top: 1em;
+  }
+  .pay{
+    width: 330px;
+    height: 35px;
+    margin-top: 6em;
+  }
+  .leb{
+    width: 500px;
+    height: 500px;
+    margin-left: -2em;
+    margin-top: -4em;
+  }
+  .small{
+    margin-top: -2em;
+  }
+  .m{
+    width: 130px;
+    height: 130px;
+  }
+  .l{
+    width: 130px;
+    height: 130px;
+  }
+  .h{
+    width: 130px;
+    height: 130px;
+  }
+  .words{
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+    color: #262626;
+  }
+  .para{
+    margin-top: 1em;
+    color: #9f9f9f;
+  }
+  .black{
+    color: #262626;
+  }
+  .move{
+    margin-top: 3em;
+    color: #9f9f9f;
+  }
+  .subtotal{
+    grid-area: subtotal;
+    display: flex;
+    gap: 9em;
+  }
+  .estimated{
+    grid-area: estimated;
+    display: flex;
+    gap: 4.5em;
+  }
+  .total{
+    grid-area: total;
+    display: flex;
+    gap: 10em;
+  }
+  /* .arrow{
+    font-size: 30px;
+    margin-left: -6em;
+    margin-bottom: -0.5em;
+  } */
+}
+@media all and (min-width: 1300px) {
+  .form{
+    width: 1139px;
+    height: 780px;
+  }
+  .left{
+    grid-area: left;
+    margin-left: 3em;
+  }
+  .right{
+    grid-area: right;
+    margin-left: 4em;
+    margin-top: -4em;
+  }
+  .leb{
+    width: 570px;
+    height: 570px;
+    margin-left: -2em;
+    margin-top: -8em;
+  }
+  .small{
+    margin-top: -7em;
+  }
+  .m{
+    width: 132px;
+    height: 132px;
+  }
+  .l{
+    width: 132px;
+    height: 132px;
+  }
+  .h{
+    width: 132px;
+    height: 132px;
+  }
+  .card img{
+    width: 500px;
+    margin-left: 0.45em;
+    margin-top: -3em;
+  }
+  .bill{
+    width: 75%;
+    height: 45%;
+    margin-top: -7em;
+    margin-left: 0.5em;
+    padding-top: 1em;
+  }
+  .pay{
+    width: 370px;
+    height: 65px;
+    margin-top: 6em;
+  }
+  .shoes h3{
+    color: #262626;
+    margin-top: 1em;
+  }
+  .subtotal{
+    grid-area: subtotal;
+    display: flex;
+    gap: 13em;
+  }
+  .estimated{
+    grid-area: estimated;
+    display: flex;
+    gap: 8.5em;
+  }
+  .total{
+    grid-area: total;
+    display: flex;
+    gap: 14em;
+  }
+  /* .arrow{
+    font-size: 30px;
+    margin-left: -5em;
+    margin-top: -1em;
+  } */
+}
+  
+@media all and (min-width: 1920px) {
+  .form{
+    width: 1639px;
+    height: 980px;
+  }
+  .left{
+    grid-area: left;
+    margin-left: 8em;
+  }
+  .right{
+    grid-area: right;
+    margin-left: 10em;
+    margin-top: -4em;
+  }
+  .leb{
+    width: 670px;
+    height: 670px;
+    margin-left: -2em;
+    margin-top: -6em;
+  }
+  .small{
+    margin-top: -7em;
+  }
+  .m{
+    width: 182px;
+    height: 182px;
+  }
+  .l{
+    width: 182px;
+    height: 182px;
+  }
+  .h{
+    width: 182px;
+    height: 182px;
+  }
+  .card img{
+    width: 700px;
+    margin-left: 0.45em;
+    margin-top: -3em;
+  }
+  .bill{
+    width: 75%;
+    height: 45%;
+    margin-top: -10em;
+    margin-left: 0.5em;
+    padding-top: 1em;
+  }
+  .pay{
+    width: 530px;
+    height: 75px;
+    margin-top: 4em;
+  }
+  .shoes h3{
+    color: #262626;
+    margin-top: 2em;
+  }
+  .subtotal{
+    grid-area: subtotal;
+    display: flex;
+    gap: 20em;
+  }
+  .estimated{
+    grid-area: estimated;
+    display: flex;
+    gap: 15.5em;
+  }
+  .total{
+    grid-area: total;
+    display: flex;
+    gap: 21em;
+  }
+  /* .arrow{
+    margin-left: -5em;
+    margin-top: 0.5em;
+  } */
+}
+
